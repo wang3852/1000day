@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 100 happy day</title>
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <style>
+        body,
+        h1 {
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        body {
+            background-image: linear-gradient(
+				to bottom,
+				rgb(240, 28, 70) 0%,
+				rgb(231, 155, 40) 15%,
+                rgb(255, 251, 0) 30%,
+                rgb(102, 226, 144) 45%,
+				rgb(54, 202, 228) 60%,
+			    rgb(38, 42, 226) 85%,
+			    rgb(228, 38, 180) 100%
+			);	
+           
+        }
+
+        .box-wrap {
+            width: 500px;
+            margin: 20px auto;
+            padding: 30px;
+            background: url(./image/timg.jpg) repeat-y top;
+        }
+
+        .box {
+            width: 480px;
+            background-color: #fff;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            width: 160px;
+            float: left;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            /* opacity: 0.7; */
+            transition: 1s all linear;
+            z-index: 99;
+            border-radius: 40px;
+        }
+
+        .current {
+            transform: scale(1.8) rotate(360deg);
+
+        }
+
+        /* 音乐 */
+        .music {
+            width: 300px;
+            height: 60px;
+            margin: 0 auto;
+        }
+
+        /* 清除浮动 */
+        .clearfix:after {
+            content: '';
+            display: block;
+            clear: both;
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+        }
+
+        /* 处理兼容 */
+        .clearfix {
+            zoom: 1
+        }
+
+        /* 文字 */
+        .wrap1,
+        .wrap2 {
+            width: 200px;
+            height: 80px;
+            border-radius: 80px;
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-family: '宋体';
+            color:#333;
+            position: absolute;
+            top: 80px;
+            transition: all 1s linear 0.5s;
+
+        }
+
+        .wrap1 {
+            left: 80px;
+            transform: translate(-120%);
+        }
+
+        .wrap2 {
+            right: 80px;
+            transform: translate(100%);
+        }
+
+        /* 动画 */
+        .wrap1.active {
+            transform: translate(0);
+        }
+
+        .wrap2.active {
+            transform: translate(0);
+        }
+
+        /* 爱心 */
+        .fa-heart {
+            font-size: 50px;
+            color: crimson;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-shadow: 10px 10px 10px pink;
+
+        }
+        .fa-hand-o-up {
+            font-size: 50px;
+            color: #000;
+        }
+        
+        .last {
+            width: 500px;
+            margin: 80px auto 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn"></div>
+    <div class="music">
+        <audio src="./music/王广允 - 好喜欢你.mp3" controls="controls" style="float:right"></audio>
+    </div>
+    <div class="box-wrap">
+
+        <div class="box">
+            <ul class="clearfix">
+                <li>
+                    <img src="./image/yu1.jpg">
+                </li>
+                <li>
+                    <img src="./image/lun1.jpg">
+                </li>
+                <li>
+                    <img src="./image/yu2.jpg">
+                </li>
+                <li>
+                    <img src="./image/lun2.jpg">
+                </li>
+                <li>
+                    <img src="./image/love.jpg">
+                </li>
+                <li>
+                    <img src="./image/lun3.jpg">
+                </li>
+                <li>
+                    <img src="./image/yu3.jpg">
+                </li>
+                <li>
+                    <img src="./image/lun4.jpg">
+                </li>
+                <li>
+                    <img src="./image/yu4.jpg">
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="wrap1">
+        <h1>重磅消息</h1>
+        <div class="msg">
+            <h2>致小王子：</h2>
+            <p>在这个匆忙的日子里，终于迎来了我们的1000天</p>
+            <p>(*￣︶￣)</p>
+            <p>我想对你说的是：</p>
+            <p>你只能更爱我</p>
+            <p>我不能更爱你</p>
+            <p>因为我更爱你</p>
+            <p>我就得妥协</p>
+            <p>我就得自己委屈</p>
+            <p>我内心没有辣么强大</p>
+            <p>我会哭</p>
+            <p>o(╥﹏╥)o</p>
+            <p>我要占爱情的主导地位</p>
+            <p>我想让你答应我的是：</p>
+            <p>要每天说爱我</p>
+            <p>要每天说想我</p>
+            <p>要每天都哄我</p>
+            <p>要把我当成你的小公主</p>
+            <p>要真诚</p>
+            <p>要善良</p>
+            <p>要超级超级爱我</p>
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            <i class="fa fa-hand-o-up" aria-hidden="true"></i>
+        </div>
+    </div>
+    
+    <div class="wrap2">
+            <h1>重磅消息</h1>
+            <div class="msg">
+                <h2>致小王子：</h2>
+                <p>在这个匆忙的日子里，终于迎来了我们的1000天</p>
+                <p>(*￣︶￣)</p>
+                <p>我想对你说的是：</p>
+                <p>你只能更爱我</p>
+                <p>我不能更爱你</p>
+                <p>因为我更爱你</p>
+                <p>我就得妥协</p>
+                <p>我就得自己委屈</p>
+                <p>我内心没有辣么强大</p>
+                <p>我会哭</p>
+                <p>o(╥﹏╥)o</p>
+                <p>我要占爱情的主导地位</p>
+                <p>我想让你答应我的是：</p>
+                <p>要每天说爱我</p>
+                <p>要每天说想我</p>
+                <p>要每天都哄我</p>
+                <p>要把我当成你的小公主</p>
+                <p>要真诚</p>
+                <p>要善良</p>
+                <p>要超级超级爱我</p>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-hand-o-up" aria-hidden="true"></i>
+            </div>
+        </div>
+  
+    <div class="last">
+        <P> 最后我可以答应你给你比你给我少一分的爱！！！（Ծ‸Ծ）</P>
+        <P>（づ￣3￣）づ╭❤～</P>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script>
+        var lis = document.querySelector('li');
+        $('li img').on('mouseover', function () {
+            $(this).addClass('current active');
+        }).on('mouseout', function () {
+            $(this).removeClass('current active');
+        });
+        $('.btn').on('click', function () {
+            $('.wrap1').addClass('active');
+            $('.wrap2').addClass('active');
+        });
+        // 自调用
+        $('.btn').trigger('click');
+
+
+    </script>
+</body>
+
+</html>
